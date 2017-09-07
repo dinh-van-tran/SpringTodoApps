@@ -1,12 +1,13 @@
 <%@ include file="common/header.jspf" %>
-
 <div class="container">
     <table class="table table-stripped">
         <thead>
-            <th>Name</th>
-            <tr>Description</tr>
-            <th>Date</th>
-            <th>Completed</th>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Completed</th>
+            </tr>
         </thead>
         <tbody>
             <c:forEach item="${todos}" var="todo">
