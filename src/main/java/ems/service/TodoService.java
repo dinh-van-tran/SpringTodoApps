@@ -24,6 +24,18 @@ public class TodoService {
         return todos;
     }
 
+    public List<Todo> getAll( String user ) {
+        List<Todo> resultList = new ArrayList<Todo>();
+        if ( user != null ) {
+            for ( Todo todo : todos ) {
+                if ( user.equals( todo.getUser() ) ) {
+                    resultList.add( todo );
+                }
+            }
+        }
+        return resultList;
+    }
+
     public void deleteTodo( int id ) {
         Iterator<Todo> iterator = todos.iterator();
         while ( iterator.hasNext() ) {
