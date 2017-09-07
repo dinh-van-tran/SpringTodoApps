@@ -15,6 +15,9 @@
 	                <td>todo.desc</td>
 	                <td>todo.targetDate</td>
 	                <td>todo.done</td>
+	                <td>
+	                    <a type="button" class="btn btn-primary" href="/update-todo?id=${todo.id}">Edit</a>
+	                </td>
 	            </tr>
             </c:forEach>
         </tbody>
