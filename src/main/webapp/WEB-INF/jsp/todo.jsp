@@ -16,3 +16,9 @@
     </form:form>
 </div>
 <%@ include file="common/footer.jspf" %>
+
+<script>
+    $('#targetDate').datepicker(
+        format:'dd/mm/yyyy'
+    );
+</script>
