@@ -7,6 +7,7 @@
                 <th>Description</th>
                 <th>Date</th>
                 <th>Completed</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
