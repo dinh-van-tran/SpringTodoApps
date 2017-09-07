@@ -22,4 +22,13 @@ public class TodoService {
     public List<Todo> getAll() {
         return todos;
     }
+
+    public Todo get( int id ) {
+        for ( Todo todo : todos ) {
+            if ( todo.getId() == id ) {
+                return todo;
+            }
+        }
+        return null;
+    }
 }
