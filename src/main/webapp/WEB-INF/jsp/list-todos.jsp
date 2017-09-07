@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <c:forEach item="${todos}" var="todo">
+            <c:forEach items="${todos}" var="todo">
 	            <tr>
 	                <td>todo.user</td>
 	                <td>todo.desc</td>
