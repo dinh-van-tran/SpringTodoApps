@@ -2,6 +2,7 @@ package ems.service;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 import ems.model.Todo;
@@ -21,5 +22,15 @@ public class TodoService {
 
     public List<Todo> getAll() {
         return todos;
+    }
+
+    public void deleteTodo( int id ) {
+        Iterator<Todo> iterator = todos.iterator();
+        while ( iterator.hasNext() ) {
+            Todo todo = iterator.next();
+            if ( todo.getId() == id ) {
+                iterator.remove();
+            }
+        }
     }
 }
