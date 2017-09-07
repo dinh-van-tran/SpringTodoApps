@@ -32,5 +32,8 @@ public class TodoService {
                 iterator.remove();
             }
         }
+
+    public void addTodo( String name, String desc, Date targetDate, boolean isDone ) {
+        todos.add( new Todo( ++todoCount, name, desc, targetDate, isDone ) );
     }
 }

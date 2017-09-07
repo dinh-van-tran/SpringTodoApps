@@ -1,5 +1,6 @@
 package ems.controller;
 
+import ems.model.Todo;
 import ems.service.TodoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +21,15 @@ public class TodoController {
         return "list-todos";
     }
 
+
     @RequestMapping( value = "/delete-todo", method = RequestMethod.GET)
     public String deleteTodo(@RequestParam int id) {
         mTodoService.deleteTodo( id );
         return "redirect:/list-todos";
+
+    @RequestMapping( value = "/add-todo", method = RequestMethod.GET )
+    public String showAddTodoPage( ModelMap model ) {
+        model.addAttribute( "todo", new Todo() );
+        return "todo";
     }
 }
