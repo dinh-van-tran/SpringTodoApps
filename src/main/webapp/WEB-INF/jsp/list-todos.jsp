@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
-    <table>
+<div class="container">
+    <table class="table table-stripped">
         <thead>
             <th>Name</th>
             <tr>Description</tr>
@@ -25,5 +27,7 @@
             </c:forEach>
         </tbody>
     </table>
+</div>
+<script src="webjars/bootstraps/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
