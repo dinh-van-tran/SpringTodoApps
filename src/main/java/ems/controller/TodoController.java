@@ -94,6 +94,7 @@ public class TodoController {
             logger.debug( "updateTodo with POST request method" );
         }
         if ( result.hasErrors() ) {
+            logger.error( "updateTodo has error" );
             return "todo";
         }
 

@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
     private static final Logger logger = Logger.getLogger( LoginController.class );
-    
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showWelcomePage(ModelMap model) {
         if(logger.isDebugEnabled()) {
             logger.debug( "showWelcomePage" );
         }
         model.put( "name", getLoggedInUsername() );
-        return "login";
+        return "welcome";
     }
 
     private String getLoggedInUsername() {
