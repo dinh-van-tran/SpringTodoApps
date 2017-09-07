@@ -1,4 +1,6 @@
 <%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>
+
 <div class="container">
     <table class="table table-stripped">
         <caption><spring:message code="todo.caption"/></caption>
