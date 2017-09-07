@@ -6,8 +6,10 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'javax:javaee-web-api::7.0'
+    compileOnly 'javax:javaee-web-api:7.0'
     implementation 'org.springframework:spring-webmvc:4.2.2.RELEASE'
+    implementation 'org.springframework.security:spring-security-web:4.0.2.RELEASE'
+    implementation 'org.springframework.security:spring-security-config:4.0.2.RELEASE'
     implementation 'org.webjars:jquery:1.9.1'
     implementation 'org.webjars:bootstrap:3.3.6'
     implementation 'org.webjars:bootstrap-datepicker:1.0.1'
