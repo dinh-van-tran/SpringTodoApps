@@ -19,15 +19,7 @@ public class TodoService {
         todos.add( new Todo( 3, "in28minutes", "Learn Hibernate", new Date(), false ) );
     }
 
-    public List<Todo> retrieveTodos( String user ) {
-        List<Todo> resultList = new ArrayList<Todo>();
-        if ( user != null ) {
-            for ( Todo todo : todos ) {
-                if ( user.equals( todo.getUser() ) ) {
-                    resultList.add( todo );
-                }
-            }
-        }
-        return resultList;
+    public List<Todo> getAll() {
+        return todos;
     }
 }
