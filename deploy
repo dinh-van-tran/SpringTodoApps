@@ -1,5 +1,5 @@
 #!/bin/bash
-export PROJECT_NAME=SpringWebMVC
+export PROJECT_NAME=SpringTodoApps
 export WORKING_DIR=$(pwd)
 export SERVER_DIR=/opt/glassfish/glassfish
 
