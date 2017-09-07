@@ -11,10 +11,10 @@
         <tbody>
             <c:forEach item="${todos}" var="todo">
 	            <tr>
-	                <th>todo.user</th>
-	                <th>todo.desc</th>
-	                <th>todo.targetDate</th>
-	                <th>todo.done</th>
+	                <td>todo.user</td>
+	                <td>todo.desc</td>
+	                <td>todo.targetDate</td>
+	                <td>todo.done</td>
 	            </tr>
             </c:forEach>
         </tbody>
